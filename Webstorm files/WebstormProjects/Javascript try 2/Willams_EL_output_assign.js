@@ -1,5 +1,5 @@
 /**
- * Created by EWilliams on 7/9/15.
+ * Created by EWilliams on 7/9/15 For SDI Section 2*
  */
 {
 var yearCreated; //declaration
@@ -14,7 +14,7 @@ var itisnot2015 = false; //boolean variable
 
 var itIs2015 = true; //boolean variable
 
-    alert ("IfThisShowsIveGotIt");
+    alert ("IfThisShowsIveGotIt"); //alert
 
 //storage container = value
 
