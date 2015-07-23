@@ -24,21 +24,7 @@ var Rectangle = shapeTwo;
 console.log (Rectangle
 
 if (Square) {
-    userSHapeA = prompt ("Enter Shape");
-    console.log ("Enter Shape")
-
-    var side = Prompt ("Enter one side's length of the square");//Select formula to use
-    console.log ("Enter one side's length of the square");
-    console.log (side);
-
+    alert (Square);
 }else{ (Rectangle);
-    shape = prompt ("Enter Shape");
-    var shape = rectangle;
-    shortSide = prompt ("Enter the short side of the rectangle");
-    console.log (shortside);
-    longSide = prompt ("Enter the long side of the rectangle");
-    console.log (longside);
+    alert Rectangle;
 }
-
-    var form1 = 2 * Number(sideshort) * 2 * Number(sidelong);
-    var form2 = side * side * side * side;
