@@ -1,27 +1,28 @@
 /**
  * Created by EWilliams on 7/21/15.
  */
-// Erica WIlliams 7/21/2015//
+// Erica Williams 7/21/2015//
 //SDI Section 2//
-//Conditional Assignmentt Week 3//
+//Conditional Assignment Week 3//
 
 //The formula for the area of a square is side * side//
 //The formula for the area of a rectangle is length * width//
 
-alert ("To find the perimeter of one of 2 shapes, Please enter Square or Rectangle");// begin user input
-console.log ("To find the perimeter of one of 2 shapes, please enter Square or Rectangle"); //print to console
+alert ("Are you eligible for a discount based on your purchase amount");// begin user input
+console.log ("Are you eligible for a discount based on your purchase amount"); //print to console
 
-var userShape = prompt ("Enter either square or rectangle");
-console.log ("Enter either square or rectangle");
-console.log (userShape);
+var UserAmount = (Number (Prompt("Enter your total purchase amount"));
+    console. log ("Enter your total purchase amount");
 
-// We have an alert, a prompt to make a decision, and a print of that decision //
+if  (userAmount > 200){
+    console.log("You are not eligible for a discount.");
+    } else if (UserAmount < 200 >5000) {
+    console.log ("You get a 100 dollar discount");
+    } else if (UserAmount < 5000 > 50000) {
+    console.log ("You get a 500 dollar discount");
+    } else if (UserAmount < 50001) {
+    console.log("You get a 1000 dollar discount");
 
-if  ("square");{
-    var square = 1;
-    console.log (square);
-}(else{
-    ("Rectangle")
-    var rectangle = 2;
-    console.log (rectangle);
-}
+    alert ("If this purchase did not meet the requirement, We have another discount type!")
+
+var UserMultiple = (Number= (Prompt )
