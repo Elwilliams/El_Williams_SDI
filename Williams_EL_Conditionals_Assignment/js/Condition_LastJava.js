@@ -23,11 +23,12 @@ console.log (typeOfRoom);//print to console
 if  (typeOfRoom === "") {
     typeOfRoom = prompt("Whoops, please enter either 50 or 100");
     console.log("Whoops, please enter either 50 or 100");
+}else if
+    (typeOfRoom === "100"){
+    console.log("Great, Let's keep going")
 }else
-    (typeOfRoom =="50" && ="100" ){
-    typeOfRoom = prompt("Great, Let's keep going");
-    console.log ("Great, Lets Keep going");
-}
+    (typeOfRoom === "50");
+    console.log ("Great, Let's keep going");
 
 var extras = prompt ("For Extras pack 1 enter 50 for Extras pack 2 enter 20");//user prompt 3
 console.log ("For Extras pack 1 enter 50 for Extras pack 2 enter 20");// print to console statement
@@ -40,3 +41,12 @@ var totalCost = Number(nightsCost) + Number(extras);//formula calculation for to
 console.log (totalCost);//print to console
 
 prompt (totalCost); //show user the total cost
+
+if (totalCost > 500 && noOfNights > 5){
+    console.log ("Congradulations, You get a free nights stay!");
+    prompt (("Congradulations, You get a free nights stay!"));
+}else
+    console.log ("Thank you for using the Resort Cost calculator, We hope to see you soon");
+    prompt ("Thank you for using the Resort Cost calculator, We hope to see you soon");
+
+

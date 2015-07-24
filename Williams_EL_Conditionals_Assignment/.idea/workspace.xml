@@ -21,31 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Condition_Lastfile.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Condition_Lastfile.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Condition_Lastfile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25">
-              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.21337126">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Williams_El_Expressions_java.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Williams_El_expression_assignment/Week 2/Williams_El_Expressions_java.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Condition_LastJava.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Condition_LastJava.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/Condition_LastJava.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62849164">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -57,8 +47,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$USER_HOME$/WebstormProjects/Williams_Erica_Conditions/Condition_Lastfile.html" />
-        <option value="$PROJECT_DIR$/Condition_Lastfile.html" />
         <option value="$PROJECT_DIR$/js/Condition_LastJava.js" />
+        <option value="$PROJECT_DIR$/Condition_Lastfile.html" />
       </list>
     </option>
   </component>
@@ -70,10 +60,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="242" />
-    <option name="y" value="54" />
+    <option name="x" value="428" />
+    <option name="y" value="365" />
     <option name="width" value="1186" />
-    <option name="height" value="813" />
+    <option name="height" value="824" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -188,7 +178,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="242" y="54" width="1186" height="813" extended-state="0" />
+    <frame x="428" y="365" width="1186" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -226,14 +216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Condition_Lastfile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Williams_El_expression_assignment/Week 2/Williams_El_Expressions_java.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -244,8 +226,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Condition_LastJava.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62849164">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Condition_Lastfile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21337126">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding />
         </state>
       </provider>
