@@ -25,7 +25,7 @@ if  (typeOfRoom === "") {
     console.log("Whoops, please enter either 50 or 100");
 }else if
     (typeOfRoom === "100"){
-    console.log("Great, Let's keep going")
+    console.log("Great, Let's keep going");
 }else
     (typeOfRoom === "50");
     console.log ("Great, Let's keep going");
