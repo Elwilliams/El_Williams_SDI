@@ -20,15 +20,15 @@ var typeOfRoom = prompt ("For Regular Room enter 50 or For Deluxe Room enter 100
 console.log ("For Regular Room enter 50 or For Deluxe Room enter 100"); //print to console
 console.log (typeOfRoom);//print to console
 
-if  (typeOfRoom === "") {
-    typeOfRoom = prompt("Whoops, please enter either 50 or 100");
-    console.log("Whoops, please enter either 50 or 100");
-}else if
-    (typeOfRoom === "100"){
-    console.log("Great, Let's keep going");
-}else
-    (typeOfRoom === "50");
-    console.log ("Great, Let's keep going");
+if  (typeOfRoom === "") { //if statement
+    typeOfRoom = prompt("Whoops, please enter either 50 or 100");//print to console
+    console.log("Whoops, please enter either 50 or 100");//print to console
+}else if //else if start point
+    (typeOfRoom === "100"){ //our else if statement
+    console.log("Great, Let's keep going");//print to console
+}else//else start point
+    (typeOfRoom === "50");// else statment
+    console.log ("Great, Let's keep going");//print to console
 
 var extras = prompt ("For Extras pack 1 enter 50 for Extras pack 2 enter 20");//user prompt 3
 console.log ("For Extras pack 1 enter 50 for Extras pack 2 enter 20");// print to console statement
@@ -42,11 +42,11 @@ console.log (totalCost);//print to console
 
 prompt (totalCost); //show user the total cost
 
-if (totalCost > 500 && noOfNights > 5){
-    console.log ("Congradulations, You get a free nights stay!");
-    prompt (("Congradulations, You get a free nights stay!"));
-}else
-    console.log ("Thank you for using the Resort Cost calculator, We hope to see you soon");
-    prompt ("Thank you for using the Resort Cost calculator, We hope to see you soon");
+if (totalCost > 500 && noOfNights > 5){// logical operator statment
+    console.log ("Congradulations, You get a free nights stay!");//print to console
+    prompt (("Congradulations, You get a free nights stay!"));//print to console
+}else //else start
+    console.log ("Thank you for using the Resort Cost calculator, We hope to see you soon");//print to console
+    prompt ("Thank you for using the Resort Cost calculator, We hope to see you soon");//print to console. 
 
 
