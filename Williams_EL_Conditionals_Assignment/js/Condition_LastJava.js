@@ -47,6 +47,6 @@ if (totalCost > 500 && noOfNights > 5){// logical operator statment
     prompt (("Congradulations, You get a free nights stay!"));//print to console
 }else //else start
     console.log ("Thank you for using the Resort Cost calculator, We hope to see you soon");//print to console
-    prompt ("Thank you for using the Resort Cost calculator, We hope to see you soon");//print to console. 
+    prompt ("Thank you for using the Resort Cost calculator, We hope to see you soon");//print to console.
 
 
