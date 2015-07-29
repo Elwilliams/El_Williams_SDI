@@ -20,48 +20,54 @@ console. log ("Which type of lottery results do you want? /n Please Enter Powerb
 //Begin function for  loop on type of lottery so user must answer//
 function typeValidation(lotteryType){ //defining the function
 
+    var timesUserClicked = 1;
+
     while (lotteryType === "") { //establishing the loop
 
-        lotteryType = prompt ("You cannot leave this blank. /n Please enter eiter Powerball or Florida Lottery");//Prompt message for user
-    }
-    console.log ("You entered " + lotteryType + ".");//console message for no name entered
-}
-//End function with a loop//
+        lotteryType = prompt ("You cannot leave this blank. Please enter eiter Powerball or Florida Lottery");//Prompt message for user
 
-//Starting main code
-typeValidation (lotteryType); //calling function//
-console.log (lotteryType); //printing to console the user's response//
+        timesUserClicked ++;
+
+        if (timesUserClicked === 15){
+            console.log ("If you do not enter Florida Lottery or Powerball you will not get the numbers and you must reload the page!!!");
+            break;
+
+        }
+
+    }
+
+//Put this aside a minute to try a conditional//
 
 //Stop Main code
 
 //Begin new function for random number for Both Lotteries
-function RandomlotGen(){
+//function RandomLotGen(){
 
-    var flLot;
+  //  var flLot;
 
     //Math.FlLot () = (Max - Min) * 2 < 53//
     //Math.round () - round to the nearest whole integer//
-    flLot =Math.flLot () (Max - Min)* 4 < 53;
-    flLot =Math.round (flLot);
+    //flLot =Math.flLot () (Max - Min)* 4 < 53;
+   // flLot =Math.round (flLot);
 
-    conosole.log (flLot);
+   // conosole.log (flLot);
 }
 
-RandomLotGen (flLot);//calling function
+//RandomLotGen (flLot);//calling function
 
 
 
 
 
 {
-var PowLot;
+//var PowLot;
 //Math.PowLot() = (Max - min) * min < 59//
 //Math.round () - round to the nearest whole integer//
-Powlot =Math.powLot () (Max- Min) * min <59;
-Powlot =Math.round (Powlot);
+//Powlot =Math.powLot () (Max- Min) * min <59;
+//Powlot =Math.round (Powlot);
 
-var PowBall;
+//var PowBall;
 //Math.PowBall () = (Max - 8) - 4 < 35//
 //Math.round () - round to the nearest whole integer//
-PowBall =Math.
+//PowBall =Math.
 }
