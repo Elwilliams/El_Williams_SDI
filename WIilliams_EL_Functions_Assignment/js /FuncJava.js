@@ -37,39 +37,65 @@ function typeValidation(lotteryType) { //defining the function
     }
 }
 
+//End Function for user input of Lottery type w/ a loop and a break at 15 clicks.
 //Starting main code
 
-typeValidation (lotteryType);
-console.log (lotteryType);
+typeValidation (lotteryType);//call function
+console.log (lotteryType);// print the users input for lotteryType.
+
 //Pause main code
 
 //Start functions for math objects to create lottery numbers for florida Lottery//
 
-function flLot(randomFlLot){ //To get a random number
+function flLot (max,min,num) { //To get a random number
+    //Formula used is (Max-Min) + 2
 
-    var randomFlLot= Math.random ()* (53 - 1) + 1;// To get a random number between 1 and 53
-    randomFlLot = Math.round (randomFlLot); // To round to the nearest whole number
-    console.log (randomFlLot);
-}
-//
-function powerB(randomPNum){
+    var FlLotArray = [];
 
-    var randomPNum = Math.random () * (59 - 1)+ 1;// To get a random number between 1 and 59
-    randomPNum = Math.round (randomPNum); // To round to the nearest whole number
-    console.log (randomPNum);
+    for (var i = 0; i < 6; i++) {
+        var randomFlLot = Math.random() * (53 - 1) + 2;// To get a random number between 1 and 53
+        FlLotArray[i] = Math.round(randomFlLot); // To round to the nearest whole number
+
+    }
+    return FlLotArray;
+    console.log (FlLotArray);
 }
+//End Function for Florida Lottery random number
+
+// Start function for a math object to create a powerball number//
+function randomPowerball(max,min) {
+
+    //Formula used (Max-Min) + 8
+    var randomPowerB = Math.random() * (max - min) + 3;// To get a random number between 1 and 53
+    randomPowerB = Math.round (randomPowerB); // To round to the nearest whole number
+    console.log (randomPowerB);
+}
+
+
+// End function for the one Powerball number
+
 //Start conditionals
 
 if// conditional to choose the Florida Lottery
 (lotteryType === "Florida Lottery") {
     console.log("Great! The Florida Lottery Numbers are coming right up"); //establishing the florida lottery formula
-    flLot ();
+    flLot (53,1); //calling function to create the florida lotteries random numb
+
 
 
 }else if//conditional to choose powerball
 
-(lotteryType === "Powerball"){
-    console.log("Great! The Powerball Numbers are coming right up");// estabishing the powerball formula
-    powerB ();
+(lotteryType === "Powerball") {
+    console.log("Great! The Powerball Numbers are.....");// estabishing the powerball formula
+    randomPowerball(59,1);//calling function for the Powerball number to 35
+    randomPowerball(49,6);
+    randomPowerball(39,29);
+    randomPowerball(28,2);
+    randomPowerball(38,3);
+    console.log ("And the Powerball is...")
+    randomPowerball(35,1);
 }
+
+// End Conditional to select
+
 //Start Main Code//
