@@ -49,10 +49,37 @@ if// conditional to choose the right math object
     console.log ("Great! The Florida Lottery Numbers are coming right up") //establishing the florida lottery formula
     var flLot = Math.random (1 -)
 
-}else if
+    (lotteryType = "Powerball") {
+        console.log("Great! The Powerball Numbers are coming right up");// estabishing the powerball formula
 
-(lotteryType = "Powerball"){
+        function powerB(min, max) {
 
-    console.log("Great! The Powerball Numbers are coming right up");// estabishing the powerball formula
+            var randomFive = [];
+            for (var i = 0; i <= 59; i++) {
+                randomFive [i] = Math.random() * (min - max) + max;
+                randomFive [i] = Math.round(randomFive[i]);
+            }
+
+            return randomFive;
+
+            var powerBall = [];
+            for (var i = 0; i <= 35; i++) {
+                powerBall [i] = Math.random() * (min - max) + 1;
+                powerball [i] = Math.round(PowerBall [i]);
+
+            }
+            return PowerBall;
+
+    }
+}
+
+//Start Main Code//
+flRandom (randomSix);
+console.log (randomSix);
+
+powerB (randomfive);
+powerB (powerBall);}else if
+
+
 
 
