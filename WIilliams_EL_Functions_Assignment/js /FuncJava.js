@@ -10,64 +10,49 @@
 
 // Start Main code
 
-var lotteryType = prompt("Which type of lottery results do you want? /n Please Enter Powerball or Florida Lottery");
+var lotteryType = prompt("Which type of lottery results do you want?  Please Enter Powerball or Florida Lottery");
 // establish which formula we are entering and main variable
-console. log ("Which type of lottery results do you want? /n Please Enter Powerball or Florida Lottery");
+console.log("Which type of lottery results do you want? Please Enter Powerball or Florida Lottery");
 //Print to console the prompt wording.//
+console.log("lotteryType");
 
 //Stop main code//
 
 //Begin function for  loop on type of lottery so user must answer//
-function typeValidation(lotteryType){ //defining the function
+function typeValidation(lotteryType) { //defining the function
 
     var timesUserClicked = 1;
 
     while (lotteryType === "") { //establishing the loop
 
-        lotteryType = prompt ("You cannot leave this blank. Please enter eiter Powerball or Florida Lottery");//Prompt message for user
+        lotteryType = prompt("You cannot leave this blank. Please enter eiter Powerball or Florida Lottery");//Prompt message for user
 
-        timesUserClicked ++;
+        timesUserClicked++;// establish a condition for the user just clicking ok without answering
 
-        if (timesUserClicked === 15){
-            console.log ("If you do not enter Florida Lottery or Powerball you will not get the numbers and you must reload the page!!!");
+        if (timesUserClicked === 15) {
+            console.log("If you do not enter Florida Lottery or Powerball you will not get the numbers and you must reload the page!!!");
             break;
-
         }
-
+        console.log("You entered " + lotteryType + ".");//console message for no name entered
     }
-
-//Put this aside a minute to try a conditional//
-
-//Stop Main code
-
-//Begin new function for random number for Both Lotteries
-//function RandomLotGen(){
-
-  //  var flLot;
-
-    //Math.FlLot () = (Max - Min) * 2 < 53//
-    //Math.round () - round to the nearest whole integer//
-    //flLot =Math.flLot () (Max - Min)* 4 < 53;
-   // flLot =Math.round (flLot);
-
-   // conosole.log (flLot);
 }
 
-//RandomLotGen (flLot);//calling function
+//Starting main code
+
+typeValidation (lotteryType);
+console.log (lotteryType);
+//Start conditionals
+
+if// conditional to choose the right math object
+(lotteryType = "Florida Lottery"){
+
+    console.log ("Great! The Florida Lottery Numbers are coming right up") //establishing the florida lottery formula
+    var flLot = Math.random (1 -)
+
+}else if
+
+(lotteryType = "Powerball"){
+
+    console.log("Great! The Powerball Numbers are coming right up");// estabishing the powerball formula
 
 
-
-
-
-{
-//var PowLot;
-//Math.PowLot() = (Max - min) * min < 59//
-//Math.round () - round to the nearest whole integer//
-//Powlot =Math.powLot () (Max- Min) * min <59;
-//Powlot =Math.round (Powlot);
-
-//var PowBall;
-//Math.PowBall () = (Max - 8) - 4 < 35//
-//Math.round () - round to the nearest whole integer//
-//PowBall =Math.
-}
