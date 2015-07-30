@@ -41,45 +41,35 @@ function typeValidation(lotteryType) { //defining the function
 
 typeValidation (lotteryType);
 console.log (lotteryType);
+//Pause main code
+
+//Start functions for math objects to create lottery numbers for florida Lottery//
+
+function flLot(randomFlLot){ //To get a random number
+
+    var randomFlLot= Math.random ()* (53 - 1) + 1;// To get a random number between 1 and 53
+    randomFlLot = Math.round (randomFlLot); // To round to the nearest whole number
+    console.log (randomFlLot);
+}
+//
+function powerB(randomPNum){
+
+    var randomPNum = Math.random () * (59 - 1)+ 1;// To get a random number between 1 and 59
+    randomPNum = Math.round (randomPNum); // To round to the nearest whole number
+    console.log (randomPNum);
+}
 //Start conditionals
 
-if// conditional to choose the right math object
-(lotteryType = "Florida Lottery"){
+if// conditional to choose the Florida Lottery
+(lotteryType === "Florida Lottery") {
+    console.log("Great! The Florida Lottery Numbers are coming right up"); //establishing the florida lottery formula
+    flLot ();
 
-    console.log ("Great! The Florida Lottery Numbers are coming right up") //establishing the florida lottery formula
-    var flLot = Math.random (1 -)
 
-    (lotteryType = "Powerball") {
-        console.log("Great! The Powerball Numbers are coming right up");// estabishing the powerball formula
+}else if//conditional to choose powerball
 
-        function powerB(min, max) {
-
-            var randomFive = [];
-            for (var i = 0; i <= 59; i++) {
-                randomFive [i] = Math.random() * (min - max) + max;
-                randomFive [i] = Math.round(randomFive[i]);
-            }
-
-            return randomFive;
-
-            var powerBall = [];
-            for (var i = 0; i <= 35; i++) {
-                powerBall [i] = Math.random() * (min - max) + 1;
-                powerball [i] = Math.round(PowerBall [i]);
-
-            }
-            return PowerBall;
-
-    }
+(lotteryType === "Powerball"){
+    console.log("Great! The Powerball Numbers are coming right up");// estabishing the powerball formula
+    powerB ();
 }
-
 //Start Main Code//
-flRandom (randomSix);
-console.log (randomSix);
-
-powerB (randomfive);
-powerB (powerBall);}else if
-
-
-
-
