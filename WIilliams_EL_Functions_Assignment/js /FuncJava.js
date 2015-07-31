@@ -14,14 +14,14 @@ var lotteryType = prompt("Which type of lottery results do you want?  Please Ent
 // establish which formula we are entering and main variable
 console.log("Which type of lottery results do you want? Please Enter Powerball or Florida Lottery");
 //Print to console the prompt wording.//
-console.log("lotteryType");
+console.log("lotteryType");//Value of lotteryType print to console.
 
 //Stop main code//
 
 //Begin function for  loop on type of lottery so user must answer//
 function typeValidation(lotteryType) { //defining the function
 
-    var timesUserClicked = 1;
+    var timesUserClicked = 1;//establish user clicking as a term.
 
     while (lotteryType === "") { //establishing the loop
 
@@ -29,11 +29,11 @@ function typeValidation(lotteryType) { //defining the function
 
         timesUserClicked++;// establish a condition for the user just clicking ok without answering
 
-        if (timesUserClicked === 15) {
+        if (timesUserClicked === 15) { //establish after 15 clicks the user needs to reload... No numbers
             console.log("If you do not enter Florida Lottery or Powerball you will not get the numbers and you must reload the page!!!");
-            break;
+            break;//mark the break of the loop
         }
-        console.log("You entered " + lotteryType + ".");//console message for no name entered
+        console.log("You entered " + lotteryType + ".");//console message for no name entered //print user response to prompt
     }
 }
 
@@ -43,28 +43,29 @@ function typeValidation(lotteryType) { //defining the function
 typeValidation (lotteryType);//call function
 console.log (lotteryType);// print the users input for lotteryType.
 
-var ranNum;
+var ranNum;// variable for printing numbers to console.
 
 //Pause main code
 
 // Start function for a math object to create a random number//
 function randomLotNum(max, min) {
 
-    var ranLotArray = [];
+    var ranLotArray = []; //unused array variable as it kept throwing undefined out
+    //remained in code for future correction//however, it works without it...
 
     //Formula used (Max-Min) + 3
 
     var randomLotNum = Math.random() * (max - min) + 3;// To get a random number between 1 and 53
     randomLotNum =Math.round(randomLotNum); // To set the array to the random number and to the nearest whole number.
 
-    return randomLotNum;
+    return randomLotNum;// out process from the fuction that gives us the random numbers///
 }
 // End function to create a random number
 
 //Start conditionals
 
 if// conditional to choose the Florida Lottery
-(lotteryType === "Florida Lottery") {
+(lotteryType === "Florida Lottery") {/// if the user entered Florida Lottery correctly, they get the numbers..
     console.log("Great! The Florida Lottery Numbers are coming right up"); //establishing the florida lottery formula
     ranNum = randomLotNum (53, 1, 6); //calling function to create the florida lotteries random numbers, Number 1
     console.log ("The Florida Lottery Numbers are " +  ranNum);
@@ -72,19 +73,19 @@ if// conditional to choose the Florida Lottery
     console.log (ranNum);
     ranNum = randomLotNum (53, 1, 6); //Number 3
     console.log (ranNum);
-    ranNum = randomLotNum (53, 1, 6);//Number 3
-    console.log (ranNum);
     ranNum = randomLotNum (53, 1, 6);//Number 4
     console.log (ranNum);
     ranNum = randomLotNum (53, 1, 6);//Number 5
     console.log (ranNum);
+    ranNum = randomLotNum (53, 1, 6);//Number 6
+    console.log (ranNum);
 
 }else if//conditional to choose powerball
 
-(lotteryType === "Powerball") {
+(lotteryType === "Powerball") { ///if the user enttered Powerball correctly, they get the numbers.
     console.log("Great! The Powerball Numbers are coming up....");// estabishing the powerball formula
-    ranNum = randomLotNum (59,1,5); // Calling function for random number, number 1
-    console.log ("The Powerball Numbers are ");
+    ranNum = randomLotNum (59,1,5); // Calling function for random number
+    console.log ("The Powerball Numbers are ");// Number 1 w/ intro message
     console.log (ranNum);
     ranNum = randomLotNum (59,1,5); // Number 2
     console.log (ranNum);
@@ -107,5 +108,5 @@ console.log ("Did you win?");// closing comment
 ///Additional Comment///
 ///I know that an array should have been used, but I kept getting that the ranLotArray was undefined despite everything
 /// I tried to do. In fact the num is still in place in all the variables were I console.log it
-/// I extablished a variable with [];, changed the var in the function at the .round line added the [i]
+/// I established a variable with [];, changed the var in the function at the .round line added the [i]
 ///it never worked. So this may not be perfect but it is working!
