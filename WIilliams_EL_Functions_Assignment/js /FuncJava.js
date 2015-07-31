@@ -43,59 +43,69 @@ function typeValidation(lotteryType) { //defining the function
 typeValidation (lotteryType);//call function
 console.log (lotteryType);// print the users input for lotteryType.
 
+var ranNum;
+
 //Pause main code
 
-//Start functions for math objects to create lottery numbers for florida Lottery//
+// Start function for a math object to create a random number//
+function randomLotNum(max, min) {
 
-function flLot (max,min,num) { //To get a random number
-    //Formula used is (Max-Min) + 2
+    var ranLotArray = [];
 
-    var FlLotArray = [];
+    //Formula used (Max-Min) + 3
 
-    for (var i = 0; i < 6; i++) {
-        var randomFlLot = Math.random() * (53 - 1) + 2;// To get a random number between 1 and 53
-        FlLotArray[i] = Math.round(randomFlLot); // To round to the nearest whole number
+    var randomLotNum = Math.random() * (max - min) + 3;// To get a random number between 1 and 53
+    randomLotNum =Math.round(randomLotNum); // To set the array to the random number and to the nearest whole number.
 
-    }
-    return FlLotArray;
-    console.log (FlLotArray);
+    return randomLotNum;
 }
-//End Function for Florida Lottery random number
-
-// Start function for a math object to create a powerball number//
-function randomPowerball(max,min) {
-
-    //Formula used (Max-Min) + 8
-    var randomPowerB = Math.random() * (max - min) + 3;// To get a random number between 1 and 53
-    randomPowerB = Math.round (randomPowerB); // To round to the nearest whole number
-    console.log (randomPowerB);
-}
-
-
-// End function for the one Powerball number
+// End function to create a random number
 
 //Start conditionals
 
 if// conditional to choose the Florida Lottery
 (lotteryType === "Florida Lottery") {
     console.log("Great! The Florida Lottery Numbers are coming right up"); //establishing the florida lottery formula
-    flLot (53,1); //calling function to create the florida lotteries random numb
-
-
+    ranNum = randomLotNum (53, 1, 6); //calling function to create the florida lotteries random numbers, Number 1
+    console.log ("The Florida Lottery Numbers are " +  ranNum);
+    ranNum = randomLotNum (53, 1, 6); //Number 2
+    console.log (ranNum);
+    ranNum = randomLotNum (53, 1, 6); //Number 3
+    console.log (ranNum);
+    ranNum = randomLotNum (53, 1, 6);//Number 3
+    console.log (ranNum);
+    ranNum = randomLotNum (53, 1, 6);//Number 4
+    console.log (ranNum);
+    ranNum = randomLotNum (53, 1, 6);//Number 5
+    console.log (ranNum);
 
 }else if//conditional to choose powerball
 
 (lotteryType === "Powerball") {
-    console.log("Great! The Powerball Numbers are.....");// estabishing the powerball formula
-    randomPowerball(59,1);//calling function for the Powerball number to 35
-    randomPowerball(49,6);
-    randomPowerball(39,29);
-    randomPowerball(28,2);
-    randomPowerball(38,3);
-    console.log ("And the Powerball is...")
-    randomPowerball(35,1);
+    console.log("Great! The Powerball Numbers are coming up....");// estabishing the powerball formula
+    ranNum = randomLotNum (59,1,5); // Calling function for random number, number 1
+    console.log ("The Powerball Numbers are ");
+    console.log (ranNum);
+    ranNum = randomLotNum (59,1,5); // Number 2
+    console.log (ranNum);
+    ranNum = randomLotNum (59,1,5); //Number 3
+    console.log (ranNum);
+    ranNum = randomLotNum (59,1,5);// Number 4
+    console.log (ranNum);
+    ranNum = randomLotNum (59,1,5); //Number 5
+    console.log (ranNum);
+    ranNum = randomLotNum (59,1,5); //Powerball/ number 6
+    console.log ("And the Powerball is " + ranNum)
 }
-
-// End Conditional to select
+//End Conditional...
 
 //Start Main Code//
+console.log ("Did you win?");// closing comment
+
+//End code
+
+///Additional Comment///
+///I know that an array should have been used, but I kept getting that the ranLotArray was undefined despite everything
+/// I tried to do. In fact the num is still in place in all the variables were I console.log it
+/// I extablished a variable with [];, changed the var in the function at the .round line added the [i]
+///it never worked. So this may not be perfect but it is working!
